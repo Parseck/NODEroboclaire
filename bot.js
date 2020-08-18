@@ -1,7 +1,7 @@
 require("dotenv").config();
 var ComfyJS = require("comfy.js");
 ComfyJS.onCommand = (user, command, message, flags, extra) => {
-
+  var goal = ["error400", "Error 404: Goal Not Found. You Need To Set A Goal."];
     switch(command) {
         case "raid":
             ComfyJS.Say("twitchRaid TombRaid Are you aware of the raid? Claire isn't! TombRaid twitchRaid");
